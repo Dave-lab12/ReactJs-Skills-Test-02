@@ -1,0 +1,35 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.headerImage {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 152, 204, 0.5) 0%,
+      rgba(0, 204, 155, 0.5) 100%
+    ),
+    url("../../../assets/rappers.jpg") no-repeat;
+  background-size: cover;
+  height: 5rem;
+  width: 8rem;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.collabTitle {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.collabNestedTitle {
+  display: flex;
+}
+.collabNestedTitle > * {
+  padding: 0 1rem;
+}
+.poolsNotification {
+  text-align: center;
+}

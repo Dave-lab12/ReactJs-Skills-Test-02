@@ -1,0 +1,54 @@
+.title {
+  border-bottom: 1px solid #fff;
+}
+.leaderBoardCategory {
+  display: flex;
+}
+.leaderBoardCategory p {
+  padding: 1rem;
+}
+table {
+  width: 100%;
+  max-width: 1300px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+td {
+  text-align: center;
+  border-bottom: 0.1px solid #00cc9b;
+}
+
+.tableImg {
+  height: 25%;
+  width: 15%;
+  padding: 5px;
+}
+
+.textImg img {
+  display: none;
+}
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #00cc9b;
+}
+.arrowLeft {
+  padding: 0.3rem 1rem;
+  margin: 20px;
+  outline: 3px solid #fff;
+}
+.arrowRight {
+  padding: 0.3rem 1rem;
+  outline: 3px solid #fff;
+}
+@media (min-width: 508px) {
+  .textImg {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .textImg img {
+    display: inline;
+  }
+}

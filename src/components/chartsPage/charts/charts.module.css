@@ -1,0 +1,48 @@
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.card {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 152, 204, 0.5) 0%,
+      rgba(0, 204, 155, 0.5) 100%
+    ),
+    url("../../../assets/guitar.png") no-repeat;
+  background-size: cover;
+  height: 5rem;
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.cardText {
+  position: absolute;
+  padding: 1rem;
+}
+.guitarImage {
+  width: 100%;
+}
+
+@media (min-width: 305px) {
+  .category {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    height: 8rem;
+  }
+}
+@media (min-width: 508px) {
+  .card {
+    height: 12rem;
+  }
+}
