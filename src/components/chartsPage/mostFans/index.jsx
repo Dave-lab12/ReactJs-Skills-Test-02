@@ -5,7 +5,7 @@ import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 import tableImg from "../../../assets/tableImg.png";
 function MostFans() {
   return (
-    <section>
+    <section className={styles.mostFans}>
       <div className={styles.title}>
         <h1>Most Fans</h1>
         <div className={styles.otherContent}>
@@ -24,10 +24,11 @@ function MostFans() {
             </div>
           </div>
           <div className={styles.stats}>
-            <p>
+            <span className={styles.Numbers}>
               <AiOutlineArrowUp />
               23%
-            </p>
+            </span>
+            <p>$63,000,000</p>
             <p>1,000,000 holders</p>
           </div>
         </div>
@@ -41,10 +42,12 @@ function MostFans() {
             </div>
           </div>
           <div className={styles.stats}>
-            <p>
+            <span className={styles.Numbers}>
               <AiOutlineArrowUp />
               23%
-            </p>
+            </span>
+            <p>$63,000,000</p>
+
             <p>1,000,000 holders</p>
           </div>
         </div>
@@ -58,10 +61,12 @@ function MostFans() {
             </div>
           </div>
           <div className={styles.stats}>
-            <p>
+            <span className={styles.Numbers}>
               <AiOutlineArrowUp />
               23%
-            </p>
+            </span>
+            <p>$63,000,000</p>
+
             <p>1,000,000 holders</p>
           </div>
         </div>

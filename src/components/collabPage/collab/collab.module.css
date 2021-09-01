@@ -1,8 +1,16 @@
+.collabWrapper {
+  padding: 2rem;
+}
 .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff;
+}
+.title h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 .headerImage {
   background: linear-gradient(
@@ -13,16 +21,66 @@
     url("../../../assets/rappers.jpg") no-repeat;
   background-size: cover;
   height: 5rem;
-  width: 8rem;
+  width: 8.5rem;
   float: right;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  border-radius: 20px;
+}
+
+.poolsNotification {
+  text-align: center;
+}
+.poolsTableContainer {
+  margin: 20px 0;
+  display: flex;
+}
+.poolsTable {
+  outline: 1px solid rgb(151, 151, 151);
+  margin: 2px;
+  display: flex;
+  width: 85%;
+  padding: 8px;
+}
+.poolDataIcon {
+  color: #fff;
+}
+.plus {
+  background-color: #cc0100;
+}
+.minus {
+  margin: 0 5px;
+  background-color: var(--cyan);
+}
+.poolsDataOwn {
+  color: var(--cyan);
+  font-weight: 700;
+}
+.artistImgB {
+  display: none;
+}
+.artistImgF {
+  display: none;
+}
+.poolsDaily {
+  outline: 1px solid rgb(151, 151, 151);
+  width: 15%;
+  padding: 1rem 1rem 1rem 0.5rem;
+  margin: 2px;
+}
+.poolsDailyNumber {
+  font-weight: 700;
 }
 .collabTitle {
+  margin: 20px 0;
   border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.collabTitle h1 {
+  font-size: 1.5rem;
 }
 .collabNestedTitle {
   display: flex;
@@ -30,6 +88,55 @@
 .collabNestedTitle > * {
   padding: 0 1rem;
 }
-.poolsNotification {
-  text-align: center;
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.poolsDataCollab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.poolsDataButton {
+  margin: 0 20px;
+  width: 4.5rem;
+  padding: 4px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--cyan);
+  color: #fff;
+  font-weight: 700;
+}
+.arrowLeft {
+  padding: 0.3rem 1rem;
+  margin: 20px;
+  outline: 3px solid #fff;
+}
+.arrowRight {
+  padding: 0.3rem 1rem;
+  outline: 3px solid #fff;
+}
+@media screen and (min-width: 600px) {
+  .imageStack {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 150px 1fr;
+  }
+  .artistImgB {
+    width: 115px;
+    display: inline;
+  }
+  .artistImgF {
+    width: 120px;
+    display: inline;
+  }
+  .imageFront {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .imageBack {
+    margin-top: 25px;
+    margin-left: -200px;
+    z-index: 1;
+  }
 }

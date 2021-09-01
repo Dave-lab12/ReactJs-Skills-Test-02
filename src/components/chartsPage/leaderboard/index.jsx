@@ -6,8 +6,8 @@ import tableImg from "../../../assets/tableImg.png";
 
 function LeaderBoard() {
   return (
-    <section>
-      <h1 className={styles.title}>LeaderBoard</h1>
+    <section className={styles.leaderBoardWrapper}>
+      <h1 className={styles.title}>Leaderboard</h1>
       <div className={styles.leaderBoardCategory}>
         <p>Genres</p>
         <p>Labels</p>
@@ -18,7 +18,7 @@ function LeaderBoard() {
       <table>
         <thead>
           <tr className={styles.tableHeader}>
-            <th>name</th>
+            <th>Name</th>
             <th>AUM</th>
             <th>Daily</th>
           </tr>
@@ -27,37 +27,43 @@ function LeaderBoard() {
           <tr>
             <td className={styles.textImg}>
               <img src={tableImg} className={styles.tableImg} alt="" />
-              Hip Hop index
+              DaBaby
             </td>
 
             <td>$64,201,290</td>
             <td>
-              <AiOutlineArrowUp />
-              23%
+              <span className={styles.Numbers}>
+                <AiOutlineArrowUp />
+                23%
+              </span>
             </td>
           </tr>
           <tr>
             <td className={styles.textImg}>
               <img src={tableImg} className={styles.tableImg} alt="" />
-              Hip Hop index
+              chris Brown
             </td>
 
             <td>$64,201,290</td>
             <td>
-              <AiOutlineArrowUp />
-              23%
+              <span className={styles.Numbers}>
+                <AiOutlineArrowUp />
+                23%
+              </span>
             </td>
           </tr>
           <tr>
             <td className={styles.textImg}>
               <img src={tableImg} className={styles.tableImg} alt="" />
-              Hip Hop index
+              Kanye West
             </td>
 
             <td>$64,201,290</td>
             <td>
-              <AiOutlineArrowUp />
-              23%
+              <span className={styles.Numbers}>
+                <AiOutlineArrowUp />
+                23%
+              </span>
             </td>
           </tr>
         </tbody>

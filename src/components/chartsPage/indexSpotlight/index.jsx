@@ -8,9 +8,8 @@ function IndexSpotlight() {
     <section className={styles.spotlight}>
       <h1>Index Spotlight</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-        sapiente saepe cumque molestias natus dolor, porro sunt? Voluptas,
-        voluptatibus similique.
+        Invest in music market indexes to get exposure to sectors with artist
+        prices determining the price of index
       </p>
       <div className={styles.tes}>
         <table>
@@ -31,8 +30,10 @@ function IndexSpotlight() {
               <td>Genre</td>
               <td>$64,201,290</td>
               <td>
-                <AiOutlineArrowUp />
-                23%
+                <span className={styles.Numbers}>
+                  <AiOutlineArrowUp />
+                  23%
+                </span>
               </td>
             </tr>
             <tr>
@@ -43,8 +44,10 @@ function IndexSpotlight() {
               <td>Genre</td>
               <td>$64,201,290</td>
               <td>
-                <AiOutlineArrowUp />
-                23%
+                <span className={styles.Numbers}>
+                  <AiOutlineArrowUp />
+                  23%
+                </span>
               </td>
             </tr>
             <tr>
@@ -55,8 +58,10 @@ function IndexSpotlight() {
               <td>Genre</td>
               <td>$64,201,290</td>
               <td>
-                <AiOutlineArrowUp />
-                23%
+                <span className={styles.Numbers}>
+                  <AiOutlineArrowUp />
+                  23%
+                </span>
               </td>
             </tr>
           </tbody>

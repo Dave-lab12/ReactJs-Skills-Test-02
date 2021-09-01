@@ -1,3 +1,7 @@
+.mostFans {
+  padding: 2rem;
+  margin-left: 25%;
+}
 .title {
   display: flex;
   align-items: center;
@@ -24,6 +28,14 @@
 }
 .tableImg {
   width: 30%;
+  display: none;
+}
+.Numbers {
+  background-color: var(--cyan);
+  border-radius: 20px;
+  min-width: 10px;
+  display: inline-block;
+  font-size: 0.8rem;
 }
 .content > * {
   padding: 0.3rem 1rem;

@@ -1,9 +1,15 @@
+:root {
+  --cyan: #00cc9b;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(73.25deg, #000000 7.24%, #4d4b4b 108.45%);
+  background: linear-gradient(73.25deg, #000000 7.24%, #4d4b4b 108.45%)
+    no-repeat;
+  background-attachment: fixed;
   color: white;
+  font-family: "Poppins", sans-serif;
 }

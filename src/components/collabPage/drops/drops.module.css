@@ -1,0 +1,67 @@
+.wrapper {
+  padding: 2rem;
+}
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.theDropsTitle {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.theDropsTitle h1 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.theDropsTitle p {
+  font-size: 1rem;
+}
+.theDropsTitle > * {
+  margin: 2px;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.theDropCard {
+  padding: 15px;
+}
+.user img {
+  display: none;
+}
+.theDropCard {
+  outline: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.stats h6 {
+  font-weight: 300;
+}
+.stats p {
+  color: var(--cyan);
+}
+.stats button {
+  background-color: var(--cyan);
+  border: none;
+  padding: 0 5px;
+  border-radius: 20px;
+  width: 4rem;
+  color: #fff;
+  font-weight: 700;
+}
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrowLeft {
+  padding: 0.3rem 1rem;
+  margin: 20px;
+  outline: 2px solid #fff;
+}
+.arrowRight {
+  padding: 0.3rem 1rem;
+  outline: 2px solid #fff;
+}

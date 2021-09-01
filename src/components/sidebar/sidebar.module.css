@@ -1,0 +1,72 @@
+.wrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 25%;
+  padding: 2rem 0 2rem 2rem;
+  max-width: 500px;
+}
+.title {
+  text-align: center;
+}
+.topContainer {
+  text-align: center;
+}
+.title img {
+  width: 80%;
+}
+.listTitle {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  text-transform: uppercase;
+}
+.listTitle:hover {
+  background: var(--cyan);
+}
+.listTitle img {
+  width: 2rem;
+  margin: 0.6rem;
+}
+.connectButton {
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  background-color: var(--cyan);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.socialMedia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 12rem;
+}
+.socialIcons {
+  margin: 0.6rem;
+  font-size: 3rem;
+  border-radius: 5px;
+  padding: 10px;
+}
+.github {
+  background: #231e1b;
+}
+.youtube {
+  background: #ff0000;
+}
+.telegram {
+  background: #0088cc;
+}
+.linkedin {
+  background: #2867b2;
+}
+.twitter {
+  background: #1da1f2;
+}
+.discord {
+  background: #7289da;
+}

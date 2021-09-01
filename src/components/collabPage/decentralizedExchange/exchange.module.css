@@ -1,0 +1,86 @@
+.exchangeWrapper {
+  padding: 2rem;
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+.exchangeContainer {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-image: #00cc9b;
+}
+.exchangeButtons {
+  margin: 10px 0;
+  padding: 0.3rem 1rem;
+  width: 6rem;
+  border: 1px solid var(--cyan);
+}
+.buttonSwap {
+  background-color: var(--cyan);
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.buttonLiquidity {
+  background-color: #fff;
+  color: var(--cyan);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.inputContainer {
+  position: relative;
+  margin: 2px;
+}
+.inputIndicator {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  color: #00cc9b;
+}
+.test::before {
+  content: "hi ";
+}
+.exchangeArrowDown {
+  color: #505050;
+}
+.inputContainer input {
+  padding: 1rem 2rem;
+  width: 80%;
+  border-radius: 2px;
+  border: none;
+  margin: 10px 0;
+}
+.inputContainer select {
+  position: absolute;
+  top: 40%;
+}
+.inputSelect {
+  border: 1px solid rgb(212, 212, 212);
+  box-shadow: 1px 1px 2px #888888;
+  text-transform: uppercase;
+  color: #505050;
+  left: 70%;
+}
+.inputSelectSecond {
+  border-radius: 2px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  left: 45%;
+  padding: 3px;
+}
+.exchangeButton {
+  width: 80%;
+  background-color: var(--cyan);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 1rem;
+}

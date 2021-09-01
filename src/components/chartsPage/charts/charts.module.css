@@ -1,7 +1,26 @@
+.chartsWrapper {
+  padding: 2rem;
+  margin-left: 25%;
+}
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.title h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 3px;
+}
+.title p {
+  font-size: 1rem;
+}
+.Numbers {
+  background-color: var(--cyan);
+  border-radius: 10px;
+  padding: 2px 6px;
 }
 
 .category {
@@ -24,6 +43,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  border-radius: 20px;
 }
 .cardText {
   position: absolute;
@@ -33,9 +53,21 @@
   width: 100%;
 }
 
-@media (min-width: 305px) {
+@media (min-width: 405px) {
   .category {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .wider1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .wider2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
   .card {
     height: 8rem;
