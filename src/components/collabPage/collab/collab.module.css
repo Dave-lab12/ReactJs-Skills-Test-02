@@ -1,5 +1,6 @@
 .collabWrapper {
   padding: 2rem;
+  margin-left: 25%;
 }
 .title {
   display: flex;
@@ -86,7 +87,7 @@
   display: flex;
 }
 .collabNestedTitle > * {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 .arrowContainer {
   display: flex;
@@ -99,7 +100,6 @@
   align-items: center;
 }
 .poolsDataButton {
-  margin: 0 20px;
   width: 4.5rem;
   padding: 4px;
   border-radius: 20px;
@@ -123,6 +123,9 @@
     grid-template-columns: 250px 1fr;
     grid-template-rows: 150px 1fr;
   }
+  .collabNestedTitle > * {
+    padding: 0 1rem;
+  }
   .artistImgB {
     width: 115px;
     display: inline;
@@ -138,5 +141,34 @@
     margin-top: 25px;
     margin-left: -200px;
     z-index: 1;
+  }
+}
+@media screen and (min-width: 700px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  .headerImage {
+    width: 15rem;
+    height: 8rem;
+  }
+  .poolsDataButton {
+    margin: 0 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .poolsData h1 {
+    font-size: 2rem;
+  }
+  .poolsData p {
+    font-size: 1.5rem;
+  }
+  .poolsDaily {
+    font-size: 2rem;
+  }
+  .collabTitle h1 {
+    font-size: 3rem;
+  }
+  .poolsDailyNumber {
+    font-size: 3rem;
   }
 }

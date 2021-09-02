@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import MostFansComponent from "./mostFans.component";
 import styles from "./mostFans.module.css";
-import { AiOutlineArrowUp } from "react-icons/ai";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import tableImg from "../../../assets/tableImg.png";
-function MostFans() {
+
+function MostFans({ data }) {
+  const [mostFansData] = useState(data);
   return (
     <section className={styles.mostFans}>
       <div className={styles.title}>
@@ -14,62 +15,20 @@ function MostFans() {
         </div>
       </div>
       <div className={styles.container}>
-        <div className={styles.row}>
-          <div className={styles.content}>
-            <img src={tableImg} alt="" className={styles.tableImg} />
-            <div className={styles.text}>
-              <h1>Young thug</h1>
-              <p>hiphop</p>
-              <p>ysl records</p>
-            </div>
-          </div>
-          <div className={styles.stats}>
-            <span className={styles.Numbers}>
-              <AiOutlineArrowUp />
-              23%
-            </span>
-            <p>$63,000,000</p>
-            <p>1,000,000 holders</p>
-          </div>
-        </div>
-        <div className={styles.row}>
-          <div className={styles.content}>
-            <img src={tableImg} alt="" className={styles.tableImg} />
-            <div className={styles.text}>
-              <h1>Young thug</h1>
-              <p>hiphop</p>
-              <p>ysl records</p>
-            </div>
-          </div>
-          <div className={styles.stats}>
-            <span className={styles.Numbers}>
-              <AiOutlineArrowUp />
-              23%
-            </span>
-            <p>$63,000,000</p>
-
-            <p>1,000,000 holders</p>
-          </div>
-        </div>
-        <div className={styles.row}>
-          <div className={styles.content}>
-            <img src={tableImg} className={styles.tableImg} alt="" />
-            <div className={styles.text}>
-              <h1>Young thug</h1>
-              <p>hiphop</p>
-              <p>ysl records</p>
-            </div>
-          </div>
-          <div className={styles.stats}>
-            <span className={styles.Numbers}>
-              <AiOutlineArrowUp />
-              23%
-            </span>
-            <p>$63,000,000</p>
-
-            <p>1,000,000 holders</p>
-          </div>
-        </div>
+        {mostFansData.mostFans.map((fans) => {
+          const { id, name, records, AUM, category, holders, growth } = fans;
+          return (
+            <MostFansComponent
+              id={id}
+              name={name}
+              records={records}
+              AUM={AUM}
+              category={category}
+              holders={holders}
+              growth={growth}
+            />
+          );
+        })}
       </div>
       <div className={styles.arrowContainer}>
         <div className={styles.arrowLeft}>

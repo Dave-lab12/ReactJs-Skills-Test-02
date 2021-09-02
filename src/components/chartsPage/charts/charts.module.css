@@ -18,9 +18,11 @@
   font-size: 1rem;
 }
 .Numbers {
+  display: inline-block;
   background-color: var(--cyan);
   border-radius: 10px;
-  padding: 2px 6px;
+  min-width: 10px;
+  font-size: 0.8rem;
 }
 
 .category {
@@ -31,6 +33,8 @@
 }
 
 .card {
+  text-transform: uppercase;
+
   background: linear-gradient(
       180deg,
       rgba(0, 152, 204, 0.5) 0%,
@@ -53,7 +57,7 @@
   width: 100%;
 }
 
-@media (min-width: 405px) {
+@media (min-width: 645px) {
   .category {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -76,5 +80,21 @@
 @media (min-width: 508px) {
   .card {
     height: 12rem;
+  }
+  .Numbers {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .title {
+    display: flex;
+    justify-content: space-around;
+  }
+  .title h1 {
+    font-size: 4rem;
+  }
+  .title p {
+    font-size: 2rem;
   }
 }

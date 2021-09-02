@@ -1,0 +1,189 @@
+{
+    "user":{
+        "id":"u1",
+        "walletHoldings":{
+            "artistToken":200,
+            "indexToken":300,
+            "playsToken":100,
+            "jukeboxToken":100
+        },
+        "likedCollectibles":[],
+        "likedArtist":[],
+        "likedIndexes":[],
+        "userStatus":"SuperFan"
+    },
+    "artist":{
+        "id":"a1",
+        "artistName":"drake",
+        "artistToken":200,
+        "dropStatus":"active",
+        "tokenomics":{
+            "artist":"drake",
+            "delLiquidity":"",
+            "fanAppreciation":"",
+            "collabRewards":"",
+            "preSale":"",
+            "preSaleMatchedAmount":"",
+            "web3Development":"",
+            "marketing":"",
+            "management":""
+        },
+        "socialMediaLinks":{
+            "twitter":"",
+            "instagram":""
+        },
+        "priceOfCoin":2000,
+        "dailyPercentChange":6,
+        "volumeCoin":"",
+        "numberOfTokenHolders":"",
+        "about":"",
+        "tags":[],
+        "analytics":{
+            "averageMonth":"",
+            "returnToMonthDate":"",
+            "returnQuarterToDate":"",
+            "returnYearToDate":"",
+            "positiveMonths":"",
+            "totalSupply":"",
+            "signals":"",
+            "tradeVolume24hr":"",
+            "24hrLow/high":"",
+            "7dLow/high":"",
+            "musiSwapRank":"",
+            "allTimeHigh":"",
+            "allTimeLow":"",
+            "preSaleROI":"",
+            "sharpeRatio":"",
+            "annualizedVolatility":""
+        }
+
+    },
+    "drops":[{
+        "id":"dr1",
+        "name":"50 Cent",
+        "marketCap":"50,500,000",
+        "price":".50",
+        "fav":"true"
+    },{
+        "id":"dr2",
+        "name":"Lil Durk",
+        "marketCap":"69,540,000",
+        "price":".014",
+        "fav":"true"
+    },{
+        "id":"dr3",
+        "name":"21 Savage",
+        "marketCap":"21,212,121",
+        "price":".2121"
+        
+    },{
+        "id":"dr4",
+        "name":"Russ",
+        "marketCap":"21,212,121",
+        "price":".2121"
+        
+    },{
+        "id":"dr5",
+        "name":"Joey BadA$$",
+        "marketCap":"21,212,121",
+        "price":".2121"
+       
+    },{
+        "id":"dr6",
+        "name":"Berner",
+        "marketCap":"4,200,420",
+        "price":".420"
+        
+    }],
+    "collectable":{
+        "id":"c1",
+        "artistCollectionId":"",
+        "description":"",
+        "blockchain":"",
+        "bidHistory":"",
+        "URI":""
+    },"myCollab":[{
+        "id":"ac1",
+        "artistTwoId":"ac2",
+        "name":"Travis Scott",
+        "artistTwoName":"A$AP Rocky",
+        "ownership":"10,000",
+        "growth":7
+    }],
+    "collabPools":[{
+        "id":"ac3",
+        "artistTwoId":"ac4",
+        "name":"Lil Nas X",
+        "artistTwoName":"DaBaby",
+        "tvl":"24,000,000",
+        "growth":10
+    }],
+    
+    "mostFans":[{
+        "id":"mr1",
+        "name":"Young Thug",
+        "records":"YSL Records",
+        "AUM":"63,000,000",
+        "category":"HipHop",
+        "holders":"1,000,000",
+        "growth":23
+    },{
+        "id":"mr2",
+        "name":"Soulja Boy",
+        "records":"YSL Records",
+        "AUM":"63,000,000",
+        "category":"HipHop",
+        "holders":"1,000,000",
+        "growth":34
+    },{
+        "id":"mr3",
+        "name":"03 Greedo",
+        "records":"Prison",
+        "AUM":"63,000,000",
+        "category":"HipHop",
+        "holders":"1,000,000",
+        "growth":10
+    }],
+    "leaderBoard":[{
+        "id":"ar1",
+        "name":"DaBaby",
+        "AUM":"1,000,000",
+        "growth":23
+    },{
+        "id":"ar2",
+        "name":"Chris Brown",
+        "AUM":"1,000,000",
+        "growth":20
+    },{
+        "id":"ar3",
+        "name":"Kanye West",
+        "AUM":"1,000,000",
+        "growth":19
+    },{
+        "id":"ar4",
+        "name":"Kendrick Lamar",
+        "AUM":"1,000,000",
+        "growth":15
+    }],
+    "indexes":[{
+        "name":"Hip Hop Index",
+        "category":"Genere",
+        "AUM":"64,201,290",
+        "growth":23
+    },{
+        "name":"k-Pop Index",
+        "category":"Genere",
+        "AUM":"64,201,290",
+        "growth":23
+    },{
+        "name":"OVO Sounds",
+        "category":"Label",
+        "AUM":"64,201,290",
+        "growth":23
+    },{
+        "name":"AWGE",
+        "category":"Group",
+        "AUM":"64,201,290",
+        "growth":23
+    }]
+}

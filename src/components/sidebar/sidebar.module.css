@@ -6,9 +6,17 @@
   align-items: center;
   height: 100vh;
   width: 25%;
-  padding: 2rem 0 2rem 2rem;
+  min-width: 120px;
   max-width: 500px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .title {
   text-align: center;
 }
@@ -16,41 +24,46 @@
   text-align: center;
 }
 .title img {
-  width: 80%;
+  width: 50%;
 }
 .listTitle {
   display: flex;
   align-items: center;
   padding: 0.6rem;
   text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+.listTitle h1 {
+  font-size: 1rem;
 }
 .listTitle:hover {
   background: var(--cyan);
+  color: #fff;
 }
 .listTitle img {
-  width: 2rem;
-  margin: 0.6rem;
+  display: none;
 }
 .connectButton {
-  padding: 0.5rem;
-  width: 80%;
+  padding: 0.2rem;
+
   border: none;
   background-color: var(--cyan);
   color: #fff;
-  font-size: 1.5rem;
   font-weight: 700;
   margin: 2rem 0;
+  float: left;
 }
 .socialMedia {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 12rem;
 }
 .socialIcons {
   margin: 0.6rem;
   font-size: 3rem;
   border-radius: 5px;
   padding: 10px;
+  color: #fff;
+  width: 100%;
 }
 .github {
   background: #231e1b;
@@ -69,4 +82,32 @@
 }
 .discord {
   background: #7289da;
+}
+
+@media (min-width: 1000px) {
+  .socialMedia {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .socialIcons {
+    margin: 0.6rem;
+  }
+  .connectButton {
+    padding: 0.5rem;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .listTitle h1 {
+    font-size: 2rem;
+  }
+  .listTitle img {
+    display: inline-block;
+    width: 2rem;
+    margin: 0.6rem;
+  }
+}
+@media (min-width: 525px) {
+  .wrapper {
+    padding: 1rem 0 2rem 2rem;
+  }
 }

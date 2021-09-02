@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import tableImg from "../../../assets/tableImg.png";
 import styles from "./indexSpotlight.module.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-function IndexSpotlight() {
+function IndexSpotlight({ data }) {
+  const [indexData] = useState(data);
+  console.log(indexData);
   return (
     <section className={styles.spotlight}>
       <h1>Index Spotlight</h1>
@@ -22,48 +24,25 @@ function IndexSpotlight() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className={styles.textImg}>
-                <img src={tableImg} className={styles.tableImg} alt="" />
-                Hip Hop index
-              </td>
-              <td>Genre</td>
-              <td>$64,201,290</td>
-              <td>
-                <span className={styles.Numbers}>
-                  <AiOutlineArrowUp />
-                  23%
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td className={styles.textImg}>
-                <img src={tableImg} className={styles.tableImg} alt="" />
-                Hip Hop index
-              </td>
-              <td>Genre</td>
-              <td>$64,201,290</td>
-              <td>
-                <span className={styles.Numbers}>
-                  <AiOutlineArrowUp />
-                  23%
-                </span>
-              </td>
-            </tr>
-            <tr>
-              <td className={styles.textImg}>
-                <img src={tableImg} className={styles.tableImg} alt="" />
-                Hip Hop index
-              </td>
-              <td>Genre</td>
-              <td>$64,201,290</td>
-              <td>
-                <span className={styles.Numbers}>
-                  <AiOutlineArrowUp />
-                  23%
-                </span>
-              </td>
-            </tr>
+            {indexData.indexes.map((artist) => {
+              const { name, category, AUM, growth } = artist;
+              return (
+                <tr>
+                  <td className={styles.textImg}>
+                    <img src={tableImg} className={styles.tableImg} alt="" />
+                    <h1>{name}</h1>
+                  </td>
+                  <td>{category}</td>
+                  <td>${AUM}</td>
+                  <td>
+                    <span className={styles.Numbers}>
+                      <AiOutlineArrowUp />
+                      {growth}%
+                    </span>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>

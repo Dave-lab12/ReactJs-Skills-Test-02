@@ -1,5 +1,6 @@
 .exchangeWrapper {
   padding: 2rem;
+  margin-left: 25%;
 }
 .title {
   text-align: center;
@@ -14,6 +15,8 @@
   border-style: solid;
   border-width: 2px;
   border-image: #00cc9b;
+  max-width: 500px;
+  margin: auto;
 }
 .exchangeButtons {
   margin: 10px 0;
@@ -43,9 +46,7 @@
   left: 60%;
   color: #00cc9b;
 }
-.test::before {
-  content: "hi ";
-}
+
 .exchangeArrowDown {
   color: #505050;
 }
@@ -72,8 +73,7 @@
   border: none;
   background-color: #000;
   color: #fff;
-  left: 45%;
-  padding: 3px;
+  left: 60%;
 }
 .exchangeButton {
   width: 80%;
@@ -83,4 +83,18 @@
   border-radius: 3px;
   color: #fff;
   margin-bottom: 1rem;
+}
+.inputSelectSecond {
+  padding: 3px;
+}
+@media screen and (min-width: 1000px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+  .inputContainer input {
+    padding: 2rem;
+  }
+  .exchangeButton {
+    margin: 30px;
+  }
 }

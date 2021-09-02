@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 body {
   background: linear-gradient(73.25deg, #000000 7.24%, #4d4b4b 108.45%)

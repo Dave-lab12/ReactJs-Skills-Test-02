@@ -20,6 +20,7 @@ td {
   border-bottom: 0.1px solid rgb(122, 122, 122);
   font-weight: 300;
   padding: 10px 0;
+  font-size: 0.8rem;
 }
 .Numbers {
   background-color: var(--cyan);
@@ -36,8 +37,9 @@ td {
   width: 15%;
   padding: 5px;
 }
-.textImg {
+.textImg h1 {
   font-weight: 700;
+  font-size: 0.8rem;
 }
 .textImg img {
   display: none;
@@ -56,12 +58,27 @@ td {
   padding: 0.3rem 1rem;
   outline: 3px solid #fff;
 }
-@media (min-width: 508px) {
+@media screen and (min-width: 723px) {
+  td {
+    font-size: 1rem;
+  }
+  .textImg h1 {
+    font-size: 2rem;
+  }
   .textImg {
     display: flex;
     align-items: center;
   }
   .textImg img {
     display: inline;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .tes {
+    margin-top: 20px;
+  }
+  .Numbers {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }

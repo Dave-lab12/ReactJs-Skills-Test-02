@@ -10,7 +10,7 @@
   display: flex;
 }
 .leaderBoardCategory p {
-  padding: 0 0.5rem;
+  padding: 0 0.2rem;
 }
 th {
   font-weight: 300;
@@ -66,5 +66,17 @@ td {
   }
   .textImg img {
     display: inline;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .title {
+    margin-bottom: 20px;
+  }
+  .leaderBoardCategory p {
+    padding: 0 0.5rem;
+  }
+  .Numbers {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 }

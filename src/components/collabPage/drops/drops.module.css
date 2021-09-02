@@ -1,5 +1,6 @@
 .wrapper {
   padding: 2rem;
+  margin-left: 25%;
 }
 .title {
   font-weight: 700;
@@ -36,6 +37,9 @@
   display: flex;
   justify-content: space-between;
 }
+.imageContainer {
+  display: none;
+}
 .stats h6 {
   font-weight: 300;
 }
@@ -64,4 +68,26 @@
 .arrowRight {
   padding: 0.3rem 1rem;
   outline: 2px solid #fff;
+}
+@media screen and (min-width: 1000px) {
+  .title {
+    font-size: 3rem;
+  }
+  .theDropsTitle h1 {
+    font-size: 3rem;
+  }
+  .theDropsTitle p {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  .imageContainer {
+    display: flex;
+  }
+  .fav {
+    color: yellow;
+  }
+  .user img {
+    display: inline;
+    width: 20%;
+  }
 }

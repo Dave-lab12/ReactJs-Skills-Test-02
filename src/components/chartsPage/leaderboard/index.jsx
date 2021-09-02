@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+
 import styles from "./leaderBoard.module.css";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
-import tableImg from "../../../assets/tableImg.png";
 
-function LeaderBoard() {
+function LeaderBoard({ data }) {
+  const [leaderBoardData] = useState(data);
   return (
     <section className={styles.leaderBoardWrapper}>
       <h1 className={styles.title}>Leaderboard</h1>
@@ -24,48 +25,26 @@ function LeaderBoard() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td className={styles.textImg}>
-              <img src={tableImg} className={styles.tableImg} alt="" />
-              DaBaby
-            </td>
+          {leaderBoardData.leaderBoard.map((artist) => {
+            const { id, name, AUM, growth } = artist;
+            const img = require(`../../../assets/${id}.png`);
+            return (
+              <tr>
+                <td className={styles.textImg}>
+                  <img src={img.default} className={styles.tableImg} alt="" />
+                  <h1>{name}</h1>
+                </td>
 
-            <td>$64,201,290</td>
-            <td>
-              <span className={styles.Numbers}>
-                <AiOutlineArrowUp />
-                23%
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td className={styles.textImg}>
-              <img src={tableImg} className={styles.tableImg} alt="" />
-              chris Brown
-            </td>
-
-            <td>$64,201,290</td>
-            <td>
-              <span className={styles.Numbers}>
-                <AiOutlineArrowUp />
-                23%
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td className={styles.textImg}>
-              <img src={tableImg} className={styles.tableImg} alt="" />
-              Kanye West
-            </td>
-
-            <td>$64,201,290</td>
-            <td>
-              <span className={styles.Numbers}>
-                <AiOutlineArrowUp />
-                23%
-              </span>
-            </td>
-          </tr>
+                <td>${AUM}</td>
+                <td>
+                  <span className={styles.Numbers}>
+                    <AiOutlineArrowUp />
+                    {growth}%
+                  </span>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
       <div className={styles.arrowContainer}>

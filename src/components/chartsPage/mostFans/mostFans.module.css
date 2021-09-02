@@ -14,7 +14,7 @@
   padding: 0 1rem;
 }
 .title > * {
-  padding: 1rem;
+  padding: 0.3rem;
 }
 .row {
   display: flex;
@@ -23,11 +23,10 @@
 }
 .content {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .tableImg {
-  width: 30%;
+  width: 20%;
   display: none;
 }
 .Numbers {
@@ -53,4 +52,22 @@
 .arrowRight {
   padding: 0.3rem 1rem;
   outline: 3px solid #fff;
+}
+@media screen and (min-width: 1000px) {
+  .tableImg {
+    display: inline;
+  }
+  .title > * {
+    padding: 1rem;
+  }
+  .Numbers {
+    padding: 0.5rem;
+  }
+  .stats > * {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  .stats p {
+    font-size: 1.2rem;
+  }
 }
