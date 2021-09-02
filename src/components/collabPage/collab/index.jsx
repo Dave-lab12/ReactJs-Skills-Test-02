@@ -33,7 +33,7 @@ function Collab({ data }) {
           const imgBack = require(`../../../assets/${artistTwoId}.png`);
 
           return (
-            <div className={styles.poolsTableContainer}>
+            <div key={id} className={styles.poolsTableContainer}>
               <div className={styles.poolsTable}>
                 <div className={styles.imageStack}>
                   <div className={styles.imageBack}>
@@ -78,12 +78,12 @@ function Collab({ data }) {
             </div>
           );
         })}
-        {collab.collabPools.map((artist) => {
+        {collab.collabPools.map((artist, index) => {
           const { id, artistTwoId, name, artistTwoName, tvl, growth } = artist;
           const img = require(`../../../assets/${id}.png`);
           const secondArtistImg = require(`../../../assets/${artistTwoId}.png`);
           return (
-            <div className={styles.collabPools}>
+            <div key={index} className={styles.collabPools}>
               <div className={styles.collabTitle}>
                 <h1>Collab Pools</h1>
                 <div className={styles.collabNestedTitle}>

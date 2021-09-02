@@ -6,7 +6,7 @@ function ArtistComponent({ name, id, marketCap, price, fav }) {
   const image = require(`../../../assets/${id}.png`);
 
   return (
-    <div className={styles.theDropCard}>
+    <div key={id} className={styles.theDropCard}>
       <div className={styles.user}>
         <div className={styles.imageContainer}>
           <AiOutlineStar className={fav && styles.fav} />

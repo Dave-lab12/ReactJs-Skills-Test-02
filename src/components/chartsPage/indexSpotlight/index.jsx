@@ -5,7 +5,6 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 function IndexSpotlight({ data }) {
   const [indexData] = useState(data);
-  console.log(indexData);
   return (
     <section className={styles.spotlight}>
       <h1>Index Spotlight</h1>
@@ -24,10 +23,10 @@ function IndexSpotlight({ data }) {
             </tr>
           </thead>
           <tbody>
-            {indexData.indexes.map((artist) => {
+            {indexData.indexes.map((artist, index) => {
               const { name, category, AUM, growth } = artist;
               return (
-                <tr>
+                <tr key={index}>
                   <td className={styles.textImg}>
                     <img src={tableImg} className={styles.tableImg} alt="" />
                     <h1>{name}</h1>

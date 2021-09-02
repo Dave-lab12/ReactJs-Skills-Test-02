@@ -16,11 +16,11 @@ function SideBars() {
           <img src={musiSwap} alt="" />
         </h1>
         <div className={styles.listContainer}>
-          {navItems.map((data) => {
+          {navItems.map((data, index) => {
             const { name, link } = data;
             const i = require(`../../assets/${name}.png`);
             return (
-              <Link to={link}>
+              <Link key={index} to={link}>
                 <div className={styles.listTitle}>
                   <img src={i.default} alt="" />
                   <h1>{name}</h1>

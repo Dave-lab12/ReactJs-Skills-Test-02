@@ -13,7 +13,7 @@ function MostFansComponent({
 }) {
   const img = require(`../../../assets/${id}.png`);
   return (
-    <div className={styles.row}>
+    <div key={id} className={styles.row}>
       <div className={styles.content}>
         <img src={img.default} alt="" className={styles.tableImg} />
         <div className={styles.text}>

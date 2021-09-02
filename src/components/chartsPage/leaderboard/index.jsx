@@ -25,11 +25,11 @@ function LeaderBoard({ data }) {
           </tr>
         </thead>
         <tbody>
-          {leaderBoardData.leaderBoard.map((artist) => {
+          {leaderBoardData.leaderBoard.map((artist, index) => {
             const { id, name, AUM, growth } = artist;
             const img = require(`../../../assets/${id}.png`);
             return (
-              <tr>
+              <tr key={index}>
                 <td className={styles.textImg}>
                   <img src={img.default} className={styles.tableImg} alt="" />
                   <h1>{name}</h1>
